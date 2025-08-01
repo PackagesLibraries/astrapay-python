@@ -35,6 +35,32 @@ pip install dist/astrapay-0.1.0-py3-none-any.whl
 
 ---
 
+## 🧾 Getting Your M-Pesa API Credentials
+
+To use AstraPay, you need API credentials from Safaricom’s [Daraja Portal](https://developer.safaricom.co.ke/daraja).
+
+### Steps to Obtain:
+
+1. **Register/Login** to [https://developer.safaricom.co.ke](https://developer.safaricom.co.ke)
+2. Go to the **My Apps** section
+3. Click **Create a New App**
+4. Under **API Products**, select:
+
+   * `MPesa Sandbox`
+5. Give your app a name (e.g., `AstraPay SDK Test`)
+6. Submit — you'll get:
+
+   * **Consumer Key**
+   * **Consumer Secret**
+
+To get your:
+
+* **Shortcode**: Use `174379` (test paybill)
+* **Passkey**: Provided under **Lipa Na M-Pesa Online**
+* **Callback URL**: Your own endpoint for receiving transaction status updates (e.g., via Ngrok in development)
+
+---
+
 ## 🚀 Quick Usage
 
 ```python
